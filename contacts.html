@@ -13,31 +13,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="bg-white text-dark">
-<div class="top h-auto p-3 d-block">
+<body >
+<div class="top h-auto p-3 d-block" style="background-color:#5bccf6;color: #030e12">
     <div class="row padding black">
         <div class="col s3">
-            <a href="home.html#home"  class="btn btn-outline-primary">HOME</a>
+            <a href="home.html#home"  class="btn btn-lg">HOME</a>
         </div>
         <div class="col s3">
-            <a href="about.html#about"  class="btn btn-outline-primary">ABOUT</a>
+            <a href="about.html#about"  class="btn btn-lg">ABOUT</a>
         </div>
         <div class="col s3">
-            <a href="skills.html#skills"  class="btn btn-outline-primary">SKILLS</a>
+            <a href="skills.html#skills"  class="btn btn-lg">SKILLS</a>
         </div>
         <div class="col s3">
-            <a href="contacts.html#contact"  class="btn btn-outline-primary">CONTACTS</a>
+            <a href="contacts.html#contact"  class="btn btn-lg current">CONTACTS</a>
         </div>
     </div>
 </div>
 
 
 </div>
-<div class="container-fluid" id="contact">
-  <h3 class="text-center" style="font-size: 35px" >CONTACT</h3>
-  <p class="text-center">Lets get in touch.Click to call or email</p>
+<div class="container-fluid" id="contact" style="background-color:#E8EAE3;color: #030e12">
+  <h3 class="text-center" style="font-size: 45px;" ><b>CONTACTS</b></h3>
+  <p class="text-center" >Lets get in touch.Click to call or email</p>
   <div style="margin-top:48px" class="text-center">
-    <p><i class="fas fa-map-marker-alt fa-3x">Nairobi, Kenya</i></p>
+
+    <button ONCLICK="ShowAndHide()"><p><i class="fas fa-map-marker-alt fa-3x">Nairobi, Kenya</i></p></button><div ID="SectionName" STYLE="display:none"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853704033!2d36.70730985973662!3d-1.302861794743477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1642850227070!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
     <p><a href="tel:+254726262033"><i class="fas fa-phone fa-3x">Phone: +254726262033</i></a></p>
     <p><a href="mailto:victorsazangu@gmail.com"><i class="fas fa-envelope-open-text fa-3x">Email: victorsazangu@gmail.com</i> </a></p>
     <br>
@@ -52,5 +53,39 @@
         </button>
       </p>
     </form>
+      <footer class="container-fluid m-0 p-3" style="background-color:#fcde67;color: #030e12">
+
+          <div class="row">
+              <div class="col">
+                  <a href="https://web.facebook.com/victorshem.azangu.3" target="_blank"><i class="fab fa-facebook fa-3x text-center "><br>facebook</i></a>
+              </div>
+              <div class="col">
+                  <a href="https://www.instagram.com/v.azangu/?hl=en" target="_blank"><i class="fab fa-instagram fa-3x text-center "><br>instagram</i></a>
+              </div>
+              <div class="col">
+                  <a href="https://twitter.com/victor_azangu" target="_blank"><i class="fab fa-twitter fa-3x text-center "><br>twitter</i></a>
+              </div>
+              <div class="col">
+                  <a href="https://www.linkedin.com/in/victor-shem-7a13821a3/" target="_blank"><i class="fab fa-linkedin fa-3x text-center "><br>linkedin</i></a>
+              </div>
+
+          </div>
+
+
+
+          <p class="text-center m-3">
+              <span>&copy:All rights reserved by Victor Azangu Shemi</span>
+          </p>
+      </footer>
 </body>
+<SCRIPT>
+    function ShowAndHide() {
+        var x = document.getElementById('SectionName');
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</SCRIPT>
 </html>
